@@ -12,12 +12,20 @@ public class Course {
         this.chapters = new ArrayList<>();
     }
 
+    public void addChapters(List<Chapter> chapters){
+        this.chapters.addAll(chapters);
+    }
+
+
+
     public void printInfo() {
-        System.out.println("Course> " + name);
+        System.out.println("Course: " + name);
 
         for (Chapter chapter: chapters) {
+            System.out.println("-----------------");
             chapter.printInfo();
             System.out.println("-----------------");
+
         }
     }
 

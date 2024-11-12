@@ -19,16 +19,24 @@ public class Main {
 
 
         Lecture lecture1 = new Lecture("Intro", 15);
-        Lecture lecture2 = new Lecture("Classes", 15);
-        Lecture lecture3 = new Lecture("Methods", 15);
+        Lecture lecture2 = new Lecture("Data structures", 15);
+        Lecture lecture3 = new Lecture("Functional", 15);
+
+        Lecture lecture4 = new Lecture("Intro", 15);
+        Lecture lecture5 = new Lecture("Classes", 15);
+        Lecture lecture6 = new Lecture("Methods", 15);
 
 
-        Chapter chapter = new Chapter("Java basics");
+        Chapter chapter1 = new Chapter("Java basics");
+        Chapter chapter2 = new Chapter("OOP");
 
-        chapter.addLectures(List.of(lecture1, lecture2, lecture3));
-        chapter.printInfo();
+        chapter1.addLectures(List.of(lecture1, lecture2, lecture3));
+        chapter2.addLectures(List.of(lecture4, lecture5, lecture6));
+        //chapter.printInfo();
 
         Course javaCourse = new Course("Java programming course: ");
+        javaCourse.addChapters(List.of(chapter1, chapter2));
+        javaCourse.printInfo();
     }
 }
 
