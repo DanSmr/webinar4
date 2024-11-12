@@ -7,9 +7,10 @@ public class Chapter {
     private String title;
     private List<Lecture> lectures;
 
-    public Chapter(String title, Lecture lecture) {
+    public Chapter(String title) {
         this.title = title;
         this.lectures = new ArrayList<>();
+
     }
 
     public void addLectures(List<Lecture> lectures){

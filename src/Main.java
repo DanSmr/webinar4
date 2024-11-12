@@ -1,5 +1,6 @@
 import skillmea.course.part2.Chapter;
 import skillmea.course.part2.Lecture;
+import skillmea.course.part2.Course;
 import skillmea.student.Student;
 
 import java.util.List;
@@ -15,15 +16,19 @@ public class Main {
 
         Student student3 = new Student("Lara", 34);
         student3.printInfo();
+
+
         Lecture lecture1 = new Lecture("Intro", 15);
         Lecture lecture2 = new Lecture("Classes", 15);
         Lecture lecture3 = new Lecture("Methods", 15);
 
 
-        Chapter chapter = new Chapter("Java basics", lecture1);
+        Chapter chapter = new Chapter("Java basics");
 
         chapter.addLectures(List.of(lecture1, lecture2, lecture3));
         chapter.printInfo();
+
+        Course javaCourse = new Course("Java programming course: ");
     }
 }
 
